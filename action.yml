@@ -1,0 +1,11 @@
+name: Bot
+description: The bot for Family and Jigra repos.
+inputs:
+  repo-token:
+    description: Personal Access Token for GitHub Repository
+  config-path:
+    description: Path to config file
+    default: .github/bot.yml
+runs:
+  using: node12
+  main: dist/index.js
